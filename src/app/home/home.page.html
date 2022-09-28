@@ -1,20 +1,46 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-app>
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title>Filmes do Ano</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+<ion-content class="ion-padding"></ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col (click)="detalhefilme(1)" class="" size="12">
+        <ion-img src="https://www.adorocinema.com/series/serie-22940/"></ion-img>
+          NOME 1
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col (click)="detalhefilme(2)" size-xs="6" size-md="3">
+        <ion-img src="https://www.adorocinema.com/filmes/filme-141110/trailer-19559999/"></ion-img>
+        NOME 2
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col (click)="detalhefilme(3)"size-xs="6" size-md="3">
+        <ion-img src="https://www.adorocinema.com/filmes/filme-305394/"></ion-img>
+        
+        NOME 3
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col (click)="detalhefilme(4)" size-xs="6" size-md="3">
+        <ion-img src="https://www.adorocinema.com/filmes/filme-275207/trailer-19564682/"></ion-img>
+        NOME 4
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col (click)="detalhefilme(5)" size-xs="6" size-md="3">
+        <ion-img src="https://www.adorocinema.com/filmes/filme-232669/trailer-19561006/"></ion-img>
+        NOME 5
+      </ion-col>
+    </ion-row>
+  
+  
+  </ion-grid>
+
+<!-- parabens -->
