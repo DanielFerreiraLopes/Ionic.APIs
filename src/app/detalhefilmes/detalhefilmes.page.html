@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>DetalhesFilmes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="container">
+  <ion-grid>
+
+
+
+    <ion-row>
+      <ion-con>
+        <ion-img src="{{ filme.photo_link }}"></ion-img>
+      </ion-con>
+    </ion-row>
+
+
+  <ion-row>
+    <ion-list> 
+     <ion-item>
+       <ion-con>
+         <div class="title">{{filme.title}}</div>
+       </ion-con>
+     </ion-item>1
+     <ion-item>
+      <ion-con>
+        <div class="title">{{filme.Categoria}}</div>
+      </ion-con>
+    </ion-item>
+    <ion-item>
+      <ion-con>
+        <div class="title">{{filme.Genero}}</div>
+      </ion-con>
+    </ion-item>
+    <ion-item>
+      <ion-con>
+        <div class="title">{{filme.Duração}}</div>
+      </ion-con>
+    </ion-item>
+    </ion-list>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-list-header>
+        <div class="title">{{filme.TitleDescrição}}</div>
+      </ion-list-header>
+      <ion-list>
+        <ion-item>
+          <div class="title">{{filme.Descrição}}</div>
+        </ion-item>
+      </ion-list>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+</ion-content>
